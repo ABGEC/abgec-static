@@ -1,0 +1,208 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 80% !important;
+    justify-content: center;
+}
+
+.header-background {
+    background-image: url(../img/formBG.jpg);
+    color: #fff;
+    background-size: cover;
+    padding-bottom: 3%;
+}
+
+#heading {
+    text-align: center;
+    /* color:#fff; */
+}
+
+.main-heading {
+    padding: 5% 0 0;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.heading-des1 {
+    margin: 0;
+    font-size: 1.5rem;
+    padding: 0.5% 0;
+
+}
+
+.heading-des2 {
+    margin: 0;
+    font-size: 1.8rem;
+    padding: 1.5% 0;
+
+}
+
+.heading-des-college {
+    margin: 0;
+    font-size: 1.8rem;
+    padding: 1.5% 0;
+
+}
+
+.office-address {
+    font-size: 1rem;
+}
+
+.sub-heading {
+    padding: 5% 0 3%;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    color: #0000ff;
+}
+
+.registration-fees {
+    padding: 3%;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 20%;
+}
+
+.row {
+    margin-top: 1%;
+}
+
+.register-btn {
+    margin: 1rem 0;
+    font-size: 1.2rem !important;
+    letter-spacing: 0.4rem;
+    width: 100%;
+}
+
+.register-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+
+/* Responsive */
+@media (min-width: 1024px) {
+    main {
+        width: 60% !important;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 100% !important;
+        justify-content: center;
+    }
+}
+
+
+.details {
+    margin-top: 5%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 2%;
+}
+
+.details h3 {
+    text-align: center;
+    margin: 0.8rem 0;
+    text-transform: capitalize;
+}
+
+/*dob*/
+#datepicker {
+    cursor: pointer;
+}
+#datepicker2 {
+    cursor: pointer;
+}
+
+.cal-icon{
+    position: absolute;
+    text-align: right;
+}
+
+.fa-calendar {
+    color: blue;
+    position: relative;
+    padding: 0.4rem;
+    right: -24rem;
+    font-size: 2rem;
+}
+
+.form-floating>input, .form-floating>select {
+    font-weight: 500;
+    font-size: 1.0rem
+}
+
+@media only screen and  (max-width: 768px) {
+    .fa-calendar{
+        position: relative;
+        right: -20rem;
+        font-size: 2rem;
+    }
+}
+
+
+.links a{
+    color:yellow;
+    text-decoration: none;
+}
+
+.links p{
+    font-size:1.3rem;
+}
+
+.last-date{
+    padding:2%;
+    text-align: center;
+    color:red;
+    margin: 1%;
+}
+
+.screenshot{
+    color: red;
+}
+
+@media (max-width:768px){
+    .main-heading{
+        font-size: 2rem;
+    }
+
+    .heading-des-college{
+        font-size: 1.3rem;
+        margin: 1em 0;
+    }
+
+    .heading-des1{
+        font-size: 1.2rem;
+        margin: 1em 0;
+    }
+
+    .heading-des2{
+        font-size: 1.3rem;
+    }
+
+    .heading-des3{
+        font-size: 1.3rem;
+        margin: 1em 1em;
+    }
+
+    .links a{
+        display: block;
+        margin: 0em;
+    }
+
+    .registration-fees{
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0 1em;
+        padding: 1em;
+    }
+
+    .reg-ul{
+        text-align: left;
+    }
+}
