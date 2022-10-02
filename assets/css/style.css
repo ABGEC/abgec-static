@@ -1210,8 +1210,6 @@ section {
     margin: auto;
     margin-top: 4rem;
     margin-bottom: 4rem;
-
-
   }
 
   .aboutABGEC .about-square {
@@ -1442,6 +1440,10 @@ section {
 .social-media-links {
   padding: 0.5em;
 }
+.social-media-links a i{
+  font-size: 2rem;
+}
+
 .invitation-quote{
   font-size: 1rem !important;
 }
