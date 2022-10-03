@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Payment Details - ABGEC</title>
     <!-- Favicon -->
     <link href="./assets/img/abgecLogo/favicon.ico" rel="icon">
@@ -15,34 +16,39 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/proceedPay.css">
 </head>
+
 <body>
     <section id="payment">
         <div class="thankyou first-section">
             <p class="thankyou-text">Thank You for registering with us.</p>
         </div>
-    
+
         <div class="second-section">
-        
-            <h3 class="total-amount">Total Payable Amount:  <i class="fa fa-rupee"></i>&nbsp<span id="amount"><script>document.write(localStorage.getItem("totalAmount"));</script></span></h3>
+
+            <h3 class="total-amount">Total Payable Amount: <i class="fa fa-rupee"></i>&nbsp<span id="amount">
+                    <script>document.write(localStorage.getItem("totalAmount"));</script>
+                </span></h3>
 
             <div class="bank-details"></div>
-                <h2>Bank details</h2>
-                <h3  class="account-details">Bank Name: IDBI(Industrial Development Bank of India)</h3>
-                <h3  class="account-details">Account No.: 2149104000066477</h3>
-                <h3  class="account-details">IFSC Code: IBKL0002149</h3>
-                <div class="payment-methods">
-                    <p> Payment Methods: Internet Banking, PhonePe, Paytm, Google Pay, UPI </p>
-                </div>
+            <h2>Bank details</h2>
+            <h3 class="account-details">Bank Name: IDBI(Industrial Development Bank of India)</h3>
+            <h3 class="account-details">Account No.: 2149104000066477</h3>
+            <h3 class="account-details">IFSC Code: IBKL0002149</h3>
+            <div class="payment-methods">
+                <p> Payment Methods: Internet Banking, PhonePe, Paytm, Google Pay, UPI </p>
             </div>
-    </div>
-    <div class="footer">
-        <h2 class="screenshot"> Please to ensure payment confirmation, share the transaction details along with payment screenshot to whatsapp no . <strong>+91 89621-30661</strong></h2>
-        <h2>You will be updated in 24 hours.</h2>
-    </div>
+        </div>
+        </div>
+        <div class="footer">
+            <h2 class="screenshot"> Please to ensure payment confirmation, share the transaction details along with
+                payment screenshot to whatsapp no . <strong>+91 89621-30661</strong></h2>
+            <h2>You will be updated in 24 hours.</h2>
+        </div>
 
 
-</section>
+    </section>
 
-    
+
 </body>
+
 </html>
