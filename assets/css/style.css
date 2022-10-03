@@ -370,8 +370,8 @@ h6 {
   margin-top: 4rem;
 }
 
-.message-heading{
-  background:-webkit-linear-gradient(blue,black);
+.message-heading {
+  background: -webkit-linear-gradient(blue, black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -497,7 +497,7 @@ h6 {
   background-image: linear-gradient(rgb(0, 34, 126), rgb(72, 127, 255));
   box-shadow: 7px 5px 30px;
   height: auto;
- 
+
 }
 
 #schedule .box {
@@ -831,7 +831,13 @@ section {
   }
 
   #contact {
-    padding: 20px 0px 20px 0px;
+    padding: 20px 2px 20px 2px;
+  }
+
+  .reg-text-format {
+    font-size: 1.1rem;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   table tr th {
@@ -888,7 +894,6 @@ section {
   text-align: center;
   margin-top: 3%;
   background-color: #f3f6fa;
-  
 }
 
 .container-fluid {
@@ -946,7 +951,7 @@ section {
 .social-media {
   color: #fff;
   font-size: 2.5rem;
-  
+
 }
 
 .social-media-links .address p {
@@ -973,19 +978,19 @@ section {
 }
 
 @media (max-width:768px) {
-  .contactus-head{
+  .contactus-head {
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
-  .container-fluid .row .col{
-      margin-top: 2rem;
-      margin-left: 1em;
-      margin-right: 1em;
+  .container-fluid .row .col {
+    margin-top: 2rem;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
-  
+
 
 }
 
@@ -1265,7 +1270,7 @@ section {
   }
 
   /*features end*/
-  
+
 
   .message .square p {
     text-align: justify;
@@ -1276,16 +1281,19 @@ section {
 
   .president-msg-photo {
     height: 50vh;
-    background: url('../img/message/1.png') no-repeat center; 
+    background: url('../img/message/1.png') no-repeat center;
   }
-  .principal-msg-photo{
+
+  .principal-msg-photo {
     height: 50vh;
-    background: url('../img/message/3.png') no-repeat center; 
+    background: url('../img/message/3.png') no-repeat center;
   }
-  .secretary-msg-photo{
+
+  .secretary-msg-photo {
     height: 50vh;
-    background: url('../img/message/2.png') no-repeat center; 
+    background: url('../img/message/2.png') no-repeat center;
   }
+
   .msg-content {
     padding: 0;
   }
@@ -1298,17 +1306,19 @@ section {
     border: 5px solid rgb(22, 9, 168);
     margin: 0 0.3em;
   }
- 
+
   #invitation .invitation-container .title {
     font-weight: 700;
     text-align: center;
     font-size: 1.5rem;
     padding-top: 0;
   }
-  .invitation-head{
+
+  .invitation-head {
     font-size: 1.3rem !important;
   }
-  .invitation-subHead{
+
+  .invitation-subHead {
     font-size: 1.15rem !important;
   }
 
@@ -1317,14 +1327,14 @@ section {
     font-size: 1.1rem;
   }
 
-  #invitation .invitation-container p strong{
+  #invitation .invitation-container p strong {
     font-size: 1.1rem !important;
   }
-  
+
   #invitation .invitation-container p:last-child {
     margin-bottom: 0;
   }
-  
+
   #schedule {
     background: #fff;
     background-size: cover;
@@ -1334,13 +1344,15 @@ section {
     height: auto;
     margin: 1em 0;
   }
+
   #schedule .section-title {
     font-weight: bold;
-    font-size: 1.8rem ;
+    font-size: 1.8rem;
     margin-bottom: 30px;
     text-transform: uppercase;
     text-align: center;
   }
+
   #schedule .title {
     font-weight: bold;
     font-size: 1.4rem;
@@ -1348,19 +1360,17 @@ section {
     text-transform: uppercase;
     text-align: center;
   }
-  
- #contact{
-  margin-top: 1em;
-}
-.social-media-links {
-  padding: 0.5em;
-}
-.social-media-links a i{
-  font-size: 2rem;
-}
 
-.invitation-quote{
-  font-size: 1.1rem !important;
-}
+  .social-media-links {
+    padding: 0.5em;
+  }
+
+  .social-media-links a i {
+    font-size: 2rem;
+  }
+
+  .invitation-quote {
+    font-size: 1.1rem !important;
+  }
 
 }
