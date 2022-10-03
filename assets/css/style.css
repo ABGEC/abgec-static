@@ -66,6 +66,10 @@ h6 {
   background-color: #ff7700;
 }
 
+.number-font{
+  font-family: sans-serif !important;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -956,7 +960,8 @@ section {
 
 .social-media-links .address p {
   color: white;
-  font-size: 1rem !important;
+  font-size: 0.93rem !important;
+  text-align: center;
 }
 
 .social-media-links .address h4 {
@@ -1238,7 +1243,7 @@ section {
     margin: 10px 0;
     font-weight: semi-bold;
     line-height: 150%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: white;
     width: 60%;
     margin-left: 0;
