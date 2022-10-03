@@ -30,6 +30,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 </head>
 
 <body>
@@ -50,6 +53,7 @@
 
   <!-- ======= Main start ======= -->
   <main id="main">
+
     <!-- ======= About Section ======= -->
     <div class="aboutABGEC">
       <h2 class="aboutABGEC-head">
@@ -85,49 +89,33 @@
     <!-- Feature SECTION  -->
     <div id="features">
       <h2 class="title feature-head"><span style="color: white;">FEATURE</span></h2>
-      <div id="slider">
-        <ul>
-          <li>
-            <div class="slider-container">
-              <p>“The smallest act of kindness is worth more than the grandest intention.” <br><strong>NSS -
-                  GECB</strong></p>
-            </div>
-          </li>
-
-          <li>
-            <div class="slider-container">
-              <p>“It's not the team with best players that wins. It's the players with the best team that wins!!”
-                <br><strong>SPORTS CLUB - GECB</strong>
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div class="slider-container">
-              <p>“Literacy is most basic currency of the knowledge economy.” <br><strong>LITERARY CLUB - GECB</strong>
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div class="slider-container">
-              <p>“Culture is the arts elevated to a set of beliefs..” <br><strong>CULTURAL CLUB - GECB</strong></p>
-            </div>
-          </li>
-
-          <li>
-            <div class="slider-container">
-              <p>“The definition of success constantly evolves for the truly ambitious.” <br><strong>DEVELOPER'S CLUB -
-                  GECB</strong></p>
-            </div>
-          </li>
-        </ul>
+      <div class="main-carousel"
+        data-flickity='{ "cellAlign": "center", "contain": true , "wrapAround":true, "autoPlay":true, "pauseAutoPlayOnHover": false, "prevNextButtons": false,"pageDots": false}'>
+        <div class="carousel-cell slider-container">
+          <p>“The smallest act of kindness is worth more than the grandest intention.” <br><strong>NSS -
+              GECB</strong></p>
+        </div>
+        <div class="carousel-cell slider-container">
+          <p>“It's not the team with best players that wins. It's the players with the best team that wins!!”
+            <br><strong>SPORTS CLUB - GECB</strong>
+        </div>
+        <div class="carousel-cell slider-container">
+          <p>“Literacy is most basic currency of the knowledge economy.” <br><strong>LITERARY CLUB - GECB</strong>
+          </p>
+        </div>
+        <div class="carousel-cell slider-container">
+          <p>“Culture is the arts elevated to a set of beliefs..” <br><strong>CULTURAL CLUB - GECB</strong></p>
+        </div>
+        <div class="carousel-cell slider-container">
+          <p>“The definition of success constantly evolves for the truly ambitious.” <br><strong>DEVELOPER'S CLUB -
+              GECB</strong></p>
+        </div>
       </div>
     </div>
     <!-- Feature SECTION end -->
 
     <!-- ======= Messages ======= -->
-    <h2 class="message-heading">Golden words by Committee Members</h2>
+    <h2 class="message-heading">Golden Words by Committee Members</h2>
     <!-- President Message -->
     <div class="message">
       <div class="square">
@@ -263,7 +251,8 @@
               chance to network/learn with them. <strong style="color: rgb(22, 9, 168); font-size:22px;">ABGEC,
                 Bilaspur, and GEC, Bilaspur</strong> is organizing one of the most important <strong
                 style="color: rgb(22, 9, 168); font-size:22px;">“Global Alumni Meet - 2022”</strong> on the <strong
-                style="color: rgb(22, 9, 168); font-size:22px;">10<sup>th</sup> and 11<sup>th</sup> of December, 2022</strong>. Please mark
+                style="color: rgb(22, 9, 168); font-size:22px;">10<sup>th</sup> and 11<sup>th</sup> of December,
+                2022</strong>. Please mark
               your calendar now to attend this event. Because of your generous support for alumni associates within the
               past, an honest deal of fine work has been done through the Alumni Association.</p>
             <p>Please register as soon as possible through the registration link. Please convey this message to your GEC
@@ -551,8 +540,10 @@
           <h4><u style="color: blue;">Registration fees (Excluding Lodging and Travelling Expenses)</u></h4>
           <ul>
             <li><strong>Individual - <i class="fa fa-rupee"></i> <span class="number-font">5000.0</span></strong></li>
-            <li><strong>Spouse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <i class="fa fa-rupee"></i> <span class="number-font">3000.0</span></strong></li>
-            <li><strong>Children &nbsp; - <i class="fa fa-rupee"></i> <span class="number-font">3000.0</span> (For age above 10 years)</strong>
+            <li><strong>Spouse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <i class="fa fa-rupee"></i> <span
+                  class="number-font">3000.0</span></strong></li>
+            <li><strong>Children &nbsp; - <i class="fa fa-rupee"></i> <span class="number-font">3000.0</span> (For age
+                above 10 years)</strong>
             </li>
           </ul>
           </p>
@@ -573,8 +564,10 @@
           <p class="reg-content">
           <h4><u style="color: blue;">Accomodation:</u></h4>
           <p class="reg-text-format">
-            Lodging and Traveling arrangements have to be made by each participant <strong>on their own</strong> for the stay on the day of event. In this
-            regard, proper accommodation arrangements are suggested in the following hotels in Bilaspur, where onlinebooking can also be done as per convenience.</p>
+            Lodging and Traveling arrangements have to be made by each participant <strong>on their own</strong> for the
+            stay on the day of event. In this
+            regard, proper accommodation arrangements are suggested in the following hotels in Bilaspur, where
+            onlinebooking can also be done as per convenience.</p>
           <ul class="reg-text-format">
             <li><strong>Hotel Marriott</strong>, Near 36 Mall, Mungeli Road</li>
             <li><strong>Hotel Central Point</strong>, Raipur Road, Near High Court</li>
@@ -589,17 +582,20 @@
 
           <p class="reg-content">
           <h4><u style="color: blue;">Travel:</u></h4>
-          <p class="reg-text-format">For Traveling, a vehicle can be booked from any traveling company as per convenience. Traveling
+          <p class="reg-text-format">For Traveling, a vehicle can be booked from any traveling company as per
+            convenience. Traveling
             arrangements are to be made by each participant <strong>on their own</strong>. The names and mobile numbers
             of some traveling companies are as follows:</p>
-          <ul class="reg-text-format number-font" >
+          <ul class="reg-text-format number-font">
             <li><strong>Rajendra Gupta Aastha Travels</strong>, +91 98271-32131, 98006-72005</li>
             <li><strong>Rahul Travels Raipur Bilaspur</strong>, +91 98934-11411, +91 99814-11411</li>
             <li><strong>Travels Zone Rahul Agarwal</strong>, +91 98271-65005</li>
           </ul>
-          <p class="reg-text-format">For the last 3 years, Bilaspur has been connected by air to <strong>Delhi, Jabalpur, Prayagraj and
+          <p class="reg-text-format">For the last 3 years, Bilaspur has been connected by air to <strong>Delhi,
+              Jabalpur, Prayagraj and
               Indore</strong>. Air facility can also be availed.</p>
-          <p class="reg-text-format number-font"><strong>Address</strong>: X4V7+RVJ, Chakarbhata (10 kms to Bilaspur)</p>
+          <p class="reg-text-format number-font"><strong>Address</strong>: X4V7+RVJ, Chakarbhata (10 kms to Bilaspur)
+          </p>
           </p>
           <br>
 
@@ -617,13 +613,14 @@
 
           <p class="reg-content">
           <h4><u style="color: blue;">Co-ordinators:</u></h4>
-          <p class="reg-text-format">To make the event successful, the Co-ordinators for various cities and their surrounding areas are as
+          <p class="reg-text-format">To make the event successful, the Co-ordinators for various cities and their
+            surrounding areas are as
             follows:</p>
 
           </p>
 
           <div style="overflow-x:scroll">
-            <table class="cordinator" cellpadding="5" cellspacing="3" width="100%" border="1" frame=void rules=rows >
+            <table class="cordinator" cellpadding="5" cellspacing="3" width="100%" border="1" frame=void rules=rows>
               <tr>
                 <th>REGION</th>
                 <th>NAME</th>
@@ -817,10 +814,17 @@
   <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <script>
+    
+  </script>
+
   <!--  JS File -->
   <script src="./assets/js/team.js"></script>
   <script src="./assets/js/main.js"></script>
 
-</body>
+</body >
 
-</html>
+</html >
