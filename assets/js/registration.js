@@ -163,7 +163,6 @@ function checkMode(val){
   payment_virtual.style.display = 'block';
   payment_physical.style.display = 'none';
   transaction_input.style.display = 'none';
-  console.log(val);
   regButton.disabled = false;
   payment_virtual_india.style.display="none";
   }
@@ -179,14 +178,23 @@ function checkMode(val){
       next_btn.style.display='block';
       payment_virtual.style.display = 'none';
       payment_virtual_india.style.display="none";
+      transaction_input.style.display = 'block';
   }
 }
 
 function nextButton(){
+  var mode = localStorage.getItem('attending-mode');
+  var country = document.getElementById('country').value;
   var listMember = memberCount();
   const payableMembers = listMember[1];
   var total = 5000 + payableMembers * 3000;
-  document.getElementById('amount').innerHTML =`₹5000 + ₹3000 x ${payableMembers} = ₹${total}`;
+  if(mode!= "virtual" && country!="India"){
+    document.getElementById('amount').innerHTML =`$ ${total*0.012} (USD)`;
+    total = total*0.012;
+  }
+  else{
+    document.getElementById('amount').innerHTML =`₹5000 + ₹3000 x ${payableMembers} = ₹${total}`;
+  }
   var payment_physical = document.getElementById('payment-physical');
   payment_physical.style.display='block'; 
   document.getElementById('totalMember').innerHTML = listMember[0];
