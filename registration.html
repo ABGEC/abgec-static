@@ -117,13 +117,13 @@
                         <div class="form-floating">
                             <select class="form-select" id="branch" name="branch" required>
                                 <option value="">Select a Branch</option>
+                                <option value="CIVIL">CIVIL</option>
                                 <option value="CSE">CSE</option>
-                                <option value="IT">IT</option>
+                                <option value="ELECTRICAL">ELECTRICAL</option>
                                 <option value="ET&T">ET&T</option>
+                                <option value="IT">IT</option>
                                 <option value="MECHANICAL">MECHANICAL</option>
                                 <option value="MINING">MINING</option>
-                                <option value="ELECTRICAL">ELECTRICAL</option>
-                                <option value="CIVIL">CIVIL</option>
                             </select>
                             <label for="floatingSelectGrid">Branch</label>
                         </div>
@@ -151,11 +151,10 @@
                     </div>
 
                     <div class="col-md year">
-                        <label for="floatingSelectGrid">DOB</label>
+                        <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
                             <input class="form-control" data-date-format="dd/mm/yyyy" id="datepicker" name="birthDate"
                                 required>
-                            <label class="cal-icon" for=""><i class="fa fa-calendar"></i></label>
                         </div>
                     </div>
 
@@ -177,11 +176,10 @@
                         </div>
                     </div>
                     <div class="col-md year">
-                        <label for="floatingSelectGrid">Marriage Anniversary</label>
+                        <label for="floatingSelectGrid">Marriage Anniversary (DD/MM/YYYY)</label>
                         <div class="form-floating">
                             <input class="form-control" data-date-format="dd/mm/yyyy" id="datepicker2"
                                 name="MarriageAnniversary">
-                            <label class="cal-icon" for=""><i class="fa fa-calendar"></i></label>
                         </div>
                     </div>
 
@@ -222,9 +220,9 @@
                     <div class="col-md organisation">
                         <label for="floatingInputGrid">Country</label>
                         <div class="form-floating">
-                            <!-- <input type="text" class="form-control" id="country" name="country" required /> -->
+                            <!-- <input type="text" class="form-control" id="country" name="country" required /> onchange="checkCountry(this.value)"-->
 
-                            <select id="country" name="country" class="form-control" onchange="checkCountry(this.value)">
+                            <select id="country" name="country" class="form-control" >
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Åland Islands">Åland Islands</option>
                                 <option value="Albania">Albania</option>
@@ -570,7 +568,7 @@
 
 
             <!--mode of attending the meet-->
-            <div class="attending-mode" id="attending-mode" style="display: none;">
+            <div class="attending-mode" id="attending-mode">
                 <h3>Mode of attending the global alumni meet 2022</h3>
                 <div class="mode-options">
                     <input type="radio" id="mode-physical" name="mode" value="physical" onclick="checkMode(this.value);">
@@ -591,7 +589,6 @@
                         <label for="member-one-name">Name</label>
                         <div class="form-floating">
                             <input type="text" class="form-control" id="member-one-name" name="member-one-name" />
-
                         </div>
                     </div>
                     <div class="col-md year">
@@ -607,9 +604,10 @@
                         </div>
                     </div>
                     <div class="col-md" id="age1" style="display: none;">
-                        <label for="floatingSelectGrid">Age</label>
+                        <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
-                            <input type="number" class="form-control" id="member-one-age" name="member-one-age" />
+                            <input class="form-control" data-date-format="dd/mm/yyyy" id="member-one-age"
+                            name="member-one-age">
                         </div>
                     </div>
                 </div>
@@ -634,9 +632,10 @@
                         </div>
                     </div>
                     <div class="col-md" id="age2" style="display: none;">
-                        <label for="floatingSelectGrid">Age</label>
+                        <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
-                            <input type="number" class="form-control" id="member-two-age" name="member-two-age" />
+                            <input class="form-control" data-date-format="dd/mm/yyyy" id="member-two-age"
+                            name="member-two-age">
                         </div>
                     </div>
                 </div>
@@ -661,9 +660,10 @@
                         </div>
                     </div>
                     <div class="col-md" id="age3" style="display: none;">
-                        <label for="floatingSelectGrid">Age</label>
+                        <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
-                            <input type="number" class="form-control" id="member-three-age" name="member-three-age" />
+                            <input class="form-control" data-date-format="dd/mm/yyyy" id="member-three-age"
+                            name="member-three-age">
                         </div>
                     </div>
                 </div>
@@ -689,9 +689,10 @@
                         </div>
                     </div>
                     <div class="col-md" id="age4" style="display: none;">
-                        <label for="floatingSelectGrid">Age</label>
+                        <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
-                            <input type="number" class="form-control" id="member-four-age" name="member-four-age" />
+                            <input class="form-control" data-date-format="dd/mm/yyyy" id="member-four-age"
+                            name="member-four-age">
                         </div>
                     </div>
                 </div>
@@ -717,9 +718,10 @@
                         </div>
                     </div>
                     <div class="col-md" id="age5" style="display: none;">
-                        <label for="floatingSelectGrid">Age</label>
+                        <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
-                            <input type="number" class="form-control" id="member-five-age" name="member-five-age" />
+                            <input class="form-control" data-date-format="dd/mm/yyyy" id="member-five-age"
+                            name="member-five-age">
                         </div>
                     </div>
                 </div>
@@ -742,6 +744,8 @@
             <!-- payment details - physical-->
             <section id="payment-physical">
                 <div class="first-section">
+                    <h4>Total Number of Members Attending Event: <span id="totalMember"></span></h4>
+                    <h4>Total member eligible for payment: <span id="payableMember"></span></h4>
                     <h3 class="total-amount">Total Payable Amount: <span id="amount">
                         </span></h3>
                     <div class="bank-details"></div>
@@ -761,9 +765,32 @@
                     <div>
                     </div>
                 </div>
-                </div>
             </section>
             <!-- payment details  physical end-->
+
+            <!-- payment details - virtual(India)-->
+            <section id="payment-virtual-india">
+                <div class="first-section">
+                    <h3 class="total-amount">Total Payable Amount: ₹3000.00</h3>
+                    <div class="bank-details"></div>
+                    <h2>Payment Methods</h2>
+                    <h2 class="payment-modes">Pay via Internet Banking</h2>
+                    <div>
+                        <h3 class="account-details">Bank Name: IDBI(Industrial Development Bank of India)</h3>
+                        <h3 class="account-details">Account No.: 2149104000066477</h3>
+                        <h3 class="account-details">IFSC Code: IBKL0002149</h3>
+                    </div>
+                    <h2 class="payment-modes">or Scan the QR code</h2>
+                    <div>
+                        <a href="upi://pay?pa=10000221012000115.9425219490@idbi&pn=ALUMNIOFBILASPURGEC&cu=INR">
+                            <img  class="img-qrcode" src="./assets/img/qrcode.png">
+                        </a>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </section>
+            <!-- payment details  virtual end-->
 
             <!-- payment details - virtual-->
             <section id="payment-virtual">
@@ -791,7 +818,11 @@
                     </div>
                     <label class="form-label" for="floatingInputGrid">Transaction ID</label>
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="transaction-id" name="transaction-id" size="25"  onkeyup="EnableDisable(this)"></textarea>
+                        <input type="text" class="form-control" id="transaction-id" name="transaction-id" size="25" ></textarea>
+                    </div>
+                    <label class="form-label" for="floatingInputGrid">Total Amount Paid</label>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="amount-paid" name="amount-paid" size="25"  onkeyup="EnableDisable(this)"></textarea>
                     </div>
                 </div>
             </div>
@@ -802,20 +833,22 @@
                 <div class="col-md organisation">
                     <div class="form-floating">
                         <button type="submit" value="submitForm();"  class="btn btn-primary btn-lg register-btn" disabled="disabled" >
-                            Register
+                            SUBMIT
                         </button>
                     </div>
                 </div>
             </div>
             <!--Button end-->
         </form>
-
+        <div class="last-date">
+            <h3>Note:</h3><h3 style="text-align: justify;">Only after entry in all mandatory fields and successful payment of registration fee <b>SUBMIT</b> button will be enabled.</h3>
+        </div>
         <div class="last-date">
             <h3>Last Date to register : <strong>30<sup>th</sup> Nov 2022</strong></h3>
         </div>
 
         <div class="footer">
-            <h4 class="screenshot"> Please to ensure payment confirmation, share the transaction details along with
+            <h4 class="screenshot"> To ensure payment confirmation, please share the transaction details along with
                 payment screenshot to whatsapp no . <strong>+91 89621-30661</strong></h4>
             <h3>You will be updated in 24 hours.</h3>
         </div>
@@ -901,6 +934,41 @@
             todayHighlight: true,
         });
         $('#datepicker2').datepicker("setDate", new Date());
+        $('#member-one-age').datepicker({
+            weekStart: 1,
+            daysOfWeekHighlighted: "6,0",
+            autoclose: true,
+            todayHighlight: true,
+        });
+        $('#member-one-age').datepicker("setDate", new Date());
+        $('#member-two-age').datepicker({
+            weekStart: 1,
+            daysOfWeekHighlighted: "6,0",
+            autoclose: true,
+            todayHighlight: true,
+        });
+        $('#member-two-age').datepicker("setDate", new Date());
+        $('#member-three-age').datepicker({
+            weekStart: 1,
+            daysOfWeekHighlighted: "6,0",
+            autoclose: true,
+            todayHighlight: true,
+        });
+        $('#member-three-age').datepicker("setDate", new Date());
+        $('#member-four-age').datepicker({
+            weekStart: 1,
+            daysOfWeekHighlighted: "6,0",
+            autoclose: true,
+            todayHighlight: true,
+        });
+        $('#member-four-age').datepicker("setDate", new Date());
+        $('#member-five-age').datepicker({
+            weekStart: 1,
+            daysOfWeekHighlighted: "6,0",
+            autoclose: true,
+            todayHighlight: true,
+        });
+        $('#member-five-age').datepicker("setDate", new Date());
     </script>
 
     <script src="./assets/js/registration.js"></script>
