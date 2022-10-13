@@ -137,7 +137,6 @@ function checkMode(val){
 
 function nextButton(){
   var listMember = memberCount();
-  const totalMembers = listMember[0];
   const payableMembers = listMember[1];
   var total = 5000 + payableMembers * 3000;
   document.getElementById('amount').innerHTML =`₹5000 + ₹3000 x ${payableMembers} = ₹${total}`;
