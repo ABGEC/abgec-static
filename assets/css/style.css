@@ -178,6 +178,31 @@ h6 {
   margin-top: -15px;
 }
 
+/* Marqueee ----------------------- */
+.mar{
+  padding: 1rem;
+  background: #ff7700;
+}
+
+#marquee {
+  font-size: 1.8rem;
+  color: white;
+}
+
+#marquee-link {
+  color:blue ;
+  text-decoration:underline;
+}
+
+#marquee-link:hover {
+  color: whitesmoke;
+}
+
+@media(max-width:768px){
+  #marquee{
+    font-size: 1.2rem;
+  }
+}
 
 /* About Us Section
 --------------------------------*/
@@ -405,6 +430,7 @@ h6 {
   color: #000;
   font-size: 1.2rem;
   font-weight: bold;
+  margin-top: 3rem;
 }
 
 #schedule .icon {
@@ -461,6 +487,9 @@ h6 {
   pointer-events: none;
 }
 
+.recognition-heading{
+  font-weight: 1500;
+}
 
 /* Executive TEAM SECTION  */
 /* --------------------------- */
@@ -660,6 +689,15 @@ section {
 #contact .social-links a:hover {
   background: #2dc997;
   color: #fff;
+}
+
+.members-link{
+  text-decoration: underline;
+  text-align: center;
+}
+
+.members-link a{
+  color: blue;
 }
 
 @-webkit-keyframes animate-loading {
