@@ -24,12 +24,20 @@ function EnableDisable(amountPaid)  {
   var transactionIDInput=document.getElementById('transaction-id');
   var regButton= document.querySelector(".register-btn");
   var amountToBePaid = localStorage.getItem("totalAmount");
+  var country = document.getElementById('country').value;
+  var mode = localStorage.getItem('attending-mode');
+  
+  if(mode == 'virtual' && country=="India"){
+    amountToBePaid = 3000;
+  }
   console.log(amountPaid.value,amountToBePaid);
     if(transactionIDInput.value.trim()!= "" && amountPaid.value == amountToBePaid) {
         regButton.disabled = false;
     } else {
         regButton.disabled = true;
     }
+
+
   }
 
 // *************************************************
@@ -141,8 +149,10 @@ function CheckRelation(val, elementId) {
 
 function checkMode(val){
   const country = document.getElementById('country').value;
+  localStorage.setItem("attending-mode", val);
   var element = document.getElementById('details');
   var next_btn = document.getElementById('next-btn');
+  var regButton= document.querySelector(".register-btn");
   var payment_virtual = document.getElementById('payment-virtual');
   var transaction_input = document.getElementById('transaction-input');
   var payment_physical = document.getElementById('payment-physical');
@@ -153,6 +163,7 @@ function checkMode(val){
   payment_virtual.style.display = 'block';
   payment_physical.style.display = 'none';
   transaction_input.style.display = 'none';
+  console.log(val);
   regButton.disabled = false;
   payment_virtual_india.style.display="none";
   }
@@ -161,6 +172,7 @@ function checkMode(val){
     element.style.display = 'none';
     payment_physical.style.display = 'none';
     document.getElementById('next-btn').style.display = "none";
+    EnableDisable(3000);
   }
   else{
       element.style.display = 'block';
