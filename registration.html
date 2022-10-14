@@ -222,7 +222,7 @@
                         <div class="form-floating">
                             <!-- <input type="text" class="form-control" id="country" name="country" required /> onchange="checkCountry(this.value)"-->
 
-                            <select id="country" name="country" class="form-control" >
+                            <select id="country" name="country" class="form-control" onchange="checkCountry(this.value)">
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Åland Islands">Åland Islands</option>
                                 <option value="Albania">Albania</option>
@@ -567,12 +567,12 @@
             <!-- occupations details end-->
 
 
-            <!--mode of attending the meet-->
+            <!--mode of attending the meeting (onclick="checkMode(this.value);")-->
             <div class="attending-mode" id="attending-mode">
                 <h3>Mode of attending the global alumni meet 2022</h3>
                 <div class="mode-options">
                     <input type="radio" id="mode-physical" name="mode" value="physical" onclick="checkMode(this.value);">
-                    <label for="mode-phsycial">Physical</label>
+                    <label for="mode-physical">Physical</label>
 
                     <input type="radio" id="mode-virtual" name="mode" value="virtual" onclick="checkMode(this.value);">
                     <label for="mode-virtual">Virtual</label>
@@ -769,7 +769,7 @@
             <!-- payment details  physical end-->
 
             <!-- payment details - virtual(India)-->
-            <section id="payment-virtual-india">
+            <!--<section id="payment-virtual-india">
                 <div class="first-section">
                     <h3 class="total-amount">Total Payable Amount: ₹3000.00</h3>
                     <div class="bank-details"></div>
@@ -789,7 +789,7 @@
                     <div>
                     </div>
                 </div>
-            </section>
+            </section>-->
             <!-- payment details  virtual end-->
 
             <!-- payment details - virtual-->
@@ -810,7 +810,7 @@
             <!-- payment details  virtual end-->
 
             <!-- trasaction id -->
-            <div class="row g-2" id="transaction-input">
+            <div class="row g-2" id="transaction-input" style="display: none;">
                 <div class="col-md transaction">
                     <label class="form-label" for="floatingInputGrid">Bank Account Holder Name</label>
                     <div class="form-floating">
