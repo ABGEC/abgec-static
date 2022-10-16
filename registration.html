@@ -106,6 +106,20 @@
                 <h3>Personal Details</h3>
                 <!--Name ,branch-->
                 <div class="row g-2">
+                    <div class="col-md">
+                        <label for="floatingInputGrid">(Mr./Mrs./Ms./Prof./Dr./Er.)</label>
+                        <div class="form-floating">
+                            <select class="form-select" id="name-title" name="name-title" required>
+                                <option value="">Select a Title</option>
+                                <option value="Mr.">Mr.</option>
+                                <option value="Mrs.">Mrs.</option>
+                                <option value="Ms.">Ms.</option>
+                                <option value="Prof.">Prof.</option>
+                                <option value="Dr.">Dr.</option>
+                                <option value="Er.">Er.</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="col-md name">
                         <label for="floatingInputGrid">Name</label>
                         <div class="form-floating">
@@ -840,7 +854,7 @@
             </div>
             <!--Button end-->
         </form>
-        <div class="last-date">
+        <div class="last-date" id="btn_note">
             <h3>Note:</h3><h3 style="text-align: justify;">Only after entry in all mandatory fields and successful payment of registration fee <b>SUBMIT</b> button will be enabled.</h3>
         </div>
         <div class="last-date">

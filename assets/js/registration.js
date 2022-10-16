@@ -5,18 +5,21 @@ function checkCountry(val) {
   var next_btn = document.getElementById('next-btn');
   var regButton = document.querySelector(".register-btn");
   var attendingMode = document.getElementById('attending-mode');
+  var btn_note = document.getElementById('btn_note');
    if (val != "India") {
     payment_virtual.style.display = "block";
     details.style.display ='none';
     next_btn.style.display ='none';
     regButton.disabled = false;
     attendingMode.style.display = "block";
+    btn_note.style.display = "none";
   } else {
     payment_virtual.style.display = "none";
     details.style.display ='block';
     next_btn.style.display ='block';
     regButton.disabled = false;
     attendingMode.style.display = "none";
+    btn_note.style.display = "block";
   }
 }
 
