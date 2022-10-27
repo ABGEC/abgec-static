@@ -832,7 +832,7 @@
                     </div>
                     <label class="form-label" for="floatingInputGrid">Transaction ID</label>
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="transaction-id" name="transaction-id" size="25" ></textarea>
+                        <input type="text" class="form-control" id="transaction-id" name="transaction-id" size="25" onkeyup="EnableDisable(document.getElementById('amount-paid'))" ></textarea>
                     </div>
                     <label class="form-label" for="floatingInputGrid">Total Amount Paid</label>
                     <div class="form-floating">
