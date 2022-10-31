@@ -1,2 +1,1 @@
-# abgec-static
-abgec static website
+# ABGEC - Alumni of Bilaspur Government Engineering College
