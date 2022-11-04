@@ -179,7 +179,7 @@ h6 {
 }
 
 /* Marqueee ----------------------- */
-.mar{
+.mar {
   padding: 1rem;
   background: #ff7700;
 }
@@ -190,16 +190,16 @@ h6 {
 }
 
 #marquee-link {
-  color:blue ;
-  text-decoration:underline;
+  color: blue;
+  text-decoration: underline;
 }
 
 #marquee-link:hover {
   color: whitesmoke;
 }
 
-@media(max-width:768px){
-  #marquee{
+@media(max-width:768px) {
+  #marquee {
     font-size: 1.2rem;
   }
 }
@@ -275,8 +275,10 @@ h6 {
 }
 
 .carousel-cell {
-  width: 100%; /* full width */
-  height: auto; /* height of carousel */
+  width: 100%;
+  /* full width */
+  height: auto;
+  /* height of carousel */
 }
 
 
@@ -487,7 +489,7 @@ h6 {
   pointer-events: none;
 }
 
-.recognition-heading{
+.recognition-heading {
   font-weight: 1500;
 }
 
@@ -691,12 +693,12 @@ section {
   color: #fff;
 }
 
-.members-link{
+.members-link {
   text-decoration: underline;
   text-align: center;
 }
 
-.members-link a{
+.members-link a {
   color: blue;
 }
 
@@ -1167,6 +1169,7 @@ section {
     margin-right: 0;
     padding: 0.8em;
   }
+
   /*features end*/
 
 
@@ -1272,4 +1275,3 @@ section {
   }
 
 }
-

@@ -1,22 +1,22 @@
 /*Check country*/
 function checkCountry(val) {
-  var payment_virtual = document.getElementById('payment-virtual');
-  var details = document.getElementById('details');
-  var next_btn = document.getElementById('next-btn');
+  var payment_virtual = document.getElementById("payment-virtual");
+  var details = document.getElementById("details");
+  var next_btn = document.getElementById("next-btn");
   var regButton = document.querySelector(".register-btn");
-  var attendingMode = document.getElementById('attending-mode');
-  var btn_note = document.getElementById('btn_note');
-   if (val != "India") {
+  var attendingMode = document.getElementById("attending-mode");
+  var btn_note = document.getElementById("btn_note");
+  if (val != "India") {
     payment_virtual.style.display = "block";
-    details.style.display ='none';
-    next_btn.style.display ='none';
+    details.style.display = "none";
+    next_btn.style.display = "none";
     regButton.disabled = false;
     attendingMode.style.display = "block";
     btn_note.style.display = "none";
   } else {
     payment_virtual.style.display = "none";
-    details.style.display ='block';
-    next_btn.style.display ='block';
+    details.style.display = "block";
+    next_btn.style.display = "block";
     regButton.disabled = false;
     attendingMode.style.display = "none";
     btn_note.style.display = "block";
@@ -28,8 +28,7 @@ function checkMode(val) {
   var details = document.getElementById("details");
   if (val == "physical" && country != "India") {
     details.style.display = "block";
-  } 
-  else {
+  } else {
     details.style.display = "none";
   }
 }
@@ -42,7 +41,6 @@ function CheckRelation(val, elementId) {
   else element.style.display = "none";
 }
 // *************************************************
-
 
 /*calculate age */
 function calculateAge(date) {
@@ -100,7 +98,7 @@ function memberCount() {
     memberFourRelation,
     memberFiveRelation,
   ];
-  
+
   for (let i = 0; i < 5; i++) {
     if (ageArray[i] == "" && relationArray[i] != "Spouse") continue;
     else {
@@ -126,6 +124,7 @@ function nextButton() {
   //var country = document.getElementById("country").value;
   var payment_physical = document.getElementById("payment-physical");
   var transaction_input = document.getElementById("transaction-input");
+  document.getElementById("note-before-payment").style.display = "block";
   var listMember = memberCount();
   const payableMembers = listMember[1];
   var total = 5000 + payableMembers * 3000;
@@ -189,7 +188,6 @@ function submitForm() {
   );
   myModal.toggle();
 }
-
 
 /*function checkMode(val) {
   const country = document.getElementById("country").value;

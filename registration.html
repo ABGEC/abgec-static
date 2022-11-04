@@ -29,7 +29,7 @@
 
 
     <script type="text/javascript">
-        
+
     </script>
 
 </head>
@@ -98,6 +98,41 @@
     <!--header end-->
 
     <main class="justify-content-center container">
+
+        <!--Note-->
+        <div class="justify-content-center container note">
+            <h3>Note</h3>
+            <p>Dear Alumni,<br>
+                Please complete your registration in the following steps :
+            </p>
+            <ol type="1">
+                <li class="ol-list">Fill your personal details, and decide the number of participants attending the
+                    <b>Global Alumni Meet 2022</b>.
+                </li>
+                <li class="ol-list">Go to the QR code and make payment by using GPay, Paytm, PhonePe, WhatsApp payment
+                    app, PayPal, Bhim, or net banking online payment modes.
+                    <br><br>
+                    <span>The payment by these apps can also be made by entering the following details :</span>
+                    <ul style="list-style-type:disc; font-weight:bolder;">
+                        <li>Account holder name &nbsp;: &nbsp;&nbsp; ALUMNI OF BILASPUR GEC</li>
+                        <li>Account number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;
+                            2149104000066477</li>
+                        <li>IFSC code
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                            &nbsp;&nbsp; IBKL0002149</li>
+                    </ul>
+                    <br>(Note:<span style="color: red; font-weight:bolder"> Keep the transaction Id for further
+                        processing</span>)
+                </li>
+                <li>Next, come back to the registration page, and in the transaction details section, please enter the
+                    transaction Id and other relevant information. Then <b>SUBMIT</b> your form.</li>
+            </ol>
+            <p>This will complete your registration.</p>
+            <p>The confirmation will be sent to you by Prof. Sonia Wadhwa in charge of the registration of Global Alumni
+                Meet 2022 by <b>E-mail</b> or <b>WhatsApp</b>.</p>
+        </div>
+        <!--Note End-->
+
         <form action="https://send.pageclip.co/ZQ0aVLjeN7mowSQlcMux4ir2nNWQ8FRV/ABGEC" class="pageclip-form"
             method="post">
 
@@ -105,6 +140,9 @@
             <div class="details">
                 <h3>Personal Details</h3>
                 <!--Name ,branch-->
+                <li class="note-style">Fill your personal details, and decide the number of participants attending the
+                    <b>Global Alumni Meet 2022</b>.
+                </li>
                 <div class="row g-2">
                     <div class="col-md">
                         <label for="floatingInputGrid">(Mr./Mrs./Ms./Prof./Dr./Er.)</label>
@@ -236,7 +274,8 @@
                         <div class="form-floating">
                             <!-- <input type="text" class="form-control" id="country" name="country" required /> onchange="checkCountry(this.value)"-->
 
-                            <select id="country" name="country" class="form-control" onchange="checkCountry(this.value)">
+                            <select id="country" name="country" class="form-control"
+                                onchange="checkCountry(this.value)">
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Åland Islands">Åland Islands</option>
                                 <option value="Albania">Albania</option>
@@ -585,7 +624,8 @@
             <div class="attending-mode" id="attending-mode">
                 <h3>Mode of attending the global alumni meet 2022</h3>
                 <div class="mode-options">
-                    <input type="radio" id="mode-physical" name="mode" value="physical" onclick="checkMode(this.value);">
+                    <input type="radio" id="mode-physical" name="mode" value="physical"
+                        onclick="checkMode(this.value);">
                     <label for="mode-physical">Physical</label>
 
                     <input type="radio" id="mode-virtual" name="mode" value="virtual" onclick="checkMode(this.value);">
@@ -621,7 +661,7 @@
                         <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
                             <input class="form-control" data-date-format="dd/mm/yyyy" id="member-one-age"
-                            name="member-one-age">
+                                name="member-one-age">
                         </div>
                     </div>
                 </div>
@@ -649,7 +689,7 @@
                         <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
                             <input class="form-control" data-date-format="dd/mm/yyyy" id="member-two-age"
-                            name="member-two-age">
+                                name="member-two-age">
                         </div>
                     </div>
                 </div>
@@ -677,7 +717,7 @@
                         <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
                             <input class="form-control" data-date-format="dd/mm/yyyy" id="member-three-age"
-                            name="member-three-age">
+                                name="member-three-age">
                         </div>
                     </div>
                 </div>
@@ -706,7 +746,7 @@
                         <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
                             <input class="form-control" data-date-format="dd/mm/yyyy" id="member-four-age"
-                            name="member-four-age">
+                                name="member-four-age">
                         </div>
                     </div>
                 </div>
@@ -735,7 +775,7 @@
                         <label for="floatingSelectGrid">DOB (DD/MM/YYYY)</label>
                         <div class="form-floating">
                             <input class="form-control" data-date-format="dd/mm/yyyy" id="member-five-age"
-                            name="member-five-age">
+                                name="member-five-age">
                         </div>
                     </div>
                 </div>
@@ -747,13 +787,21 @@
             <div class="row g-2 " id="next-btn">
                 <div class="col">
                     <div class="form-floating">
-                        <a type="button" onclick="nextButton();"  class="btn btn-primary btn-lg">
+                        <a type="button" onclick="nextButton();" class="btn btn-primary btn-lg">
                             Next ➡️
                         </a>
                     </div>
                 </div>
             </div>
             <!--Button end-->
+
+            <div id="note-before-payment" style="display: none; margin-top:1em;">
+                <li class="note-style">Go to the QR code and make payment by using GPay, Paytm, PhonePe, WhatsApp
+                    payment app, PayPal, Bhim, or net banking online payment modes.</li>
+
+                <li class="note-style">Next, come back to the registration page, and in the transaction details section,
+                    please enter the transaction Id and other relevant information. Then <b>SUBMIT</b> your form.</li>
+            </div>
 
             <!-- payment details - physical-->
             <section id="payment-physical">
@@ -773,7 +821,7 @@
                     <h2 class="payment-modes">or Scan the QR code</h2>
                     <div>
                         <a href="upi://pay?pa=1000221012000115.9425219490@idbi&pn=ALUMNIOFBILASPURGEC&cu=INR">
-                            <img  class="img-qrcode" src="./assets/img/qrcode.png">
+                            <img class="img-qrcode" src="./assets/img/qrcode.png">
                         </a>
                     </div>
                     <div>
@@ -809,9 +857,9 @@
             <!-- payment details - virtual-->
             <section id="payment-virtual">
                 <div class="first-section">
-                    <h3 class="total-amount">Total Payable Amount: <span > $50 (USD)
+                    <h3 class="total-amount">Total Payable Amount: <span> $50 (USD)
                         </span></h3>
-                    
+
                     <h3>For Payment information contact:</h3>
                     <ul style="list-style:none; font-size:1.5rem;">
                         <li>Mr. Tavinder Pal Singh Arora (President) : +91 94252-19490</li>
@@ -828,15 +876,18 @@
                 <div class="col-md transaction">
                     <label class="form-label" for="floatingInputGrid">Bank Account Holder Name</label>
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="account_holder_name" name="account_holder_name" size="25" ></textarea>
+                        <input type="text" class="form-control" id="account_holder_name" name="account_holder_name"
+                            size="25"></textarea>
                     </div>
                     <label class="form-label" for="floatingInputGrid">Transaction ID</label>
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="transaction-id" name="transaction-id" size="25" onkeyup="EnableDisable(document.getElementById('amount-paid'))" ></textarea>
+                        <input type="text" class="form-control" id="transaction-id" name="transaction-id" size="25"
+                            onkeyup="EnableDisable(document.getElementById('amount-paid'))"></textarea>
                     </div>
                     <label class="form-label" for="floatingInputGrid">Total Amount Paid</label>
                     <div class="form-floating">
-                        <input type="number" class="form-control" id="amount-paid" name="amount-paid" size="25"  onkeyup="EnableDisable(this)"></textarea>
+                        <input type="number" class="form-control" id="amount-paid" name="amount-paid" size="25"
+                            onkeyup="EnableDisable(this)"></textarea>
                     </div>
                 </div>
             </div>
@@ -846,7 +897,8 @@
             <div class="row g-2">
                 <div class="col-md organisation">
                     <div class="form-floating">
-                        <button type="submit" value="submitForm();"  class="btn btn-primary btn-lg register-btn" disabled="disabled" >
+                        <button type="submit" value="submitForm();" class="btn btn-primary btn-lg register-btn"
+                            disabled="disabled">
                             SUBMIT
                         </button>
                     </div>
@@ -855,7 +907,9 @@
             <!--Button end-->
         </form>
         <div class="last-date" id="btn_note">
-            <h3>Note:</h3><h3 style="text-align: justify;">Only after entry in all mandatory fields and successful payment of registration fee <b>SUBMIT</b> button will be enabled.</h3>
+            <h3>Note:</h3>
+            <h3 style="text-align: justify;">Only after entry in all mandatory fields and successful payment of
+                registration fee <b>SUBMIT</b> button will be enabled.</h3>
         </div>
         <div class="last-date">
             <h3>Last Date to register : <strong>30<sup>th</sup> Nov 2022</strong></h3>
@@ -880,7 +934,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="outputContainer">
-                        <div >
+                        <div>
                             <p><strong>Thankyou</strong>, you are <span style="color: green;">successfully</span>
                                 registered.
                                 <br><br>
@@ -903,7 +957,7 @@
                                 <p class="screenshot"> Please to ensure payment confirmation, share the transaction
                                     details along with payment screenshot to whatsapp no . <strong><br>+91
                                         89621-30661</strong></p>
-                                <p >You will be updated in 24 hours.</p>
+                                <p>You will be updated in 24 hours.</p>
                                 <!-- <p style="color:green"><b>If Already paid then ignore this message.</b></p> -->
                             </div>
 

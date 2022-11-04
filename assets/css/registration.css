@@ -98,13 +98,14 @@ main {
     }
 }
 
-.attending-mode{
+.attending-mode {
     margin-top: 5%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     padding: 2%;
     text-align: center;
     display: none;
 }
+
 .attending-mode h3 {
     text-align: center;
     margin: 0.8rem 0;
@@ -112,10 +113,31 @@ main {
     margin-bottom: 2rem;
 }
 
-.attending-mode .mode-options{
+.attending-mode .mode-options {
     font-size: 1.7rem;
     margin-left: 1rem;
 }
+
+.note {
+    margin-top: 5%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 5%;
+}
+
+.note-style{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+    padding:1em;
+}
+
+.note h3{
+    text-align: center;
+}
+
+.ol-list{
+    margin-top: 1em;
+    margin-bottom: 1em;
+} 
+
 .details {
     margin-top: 5%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -129,150 +151,164 @@ main {
 }
 
 /*dob*/
-#datepicker, #datepicker2, #member-one-age, #member-two-age, #member-three-age,#member-four-age,#member-five-age {
+#datepicker,
+#datepicker2,
+#member-one-age,
+#member-two-age,
+#member-three-age,
+#member-four-age,
+#member-five-age {
     cursor: pointer;
 }
 
-.form-floating>input, .form-floating>select {
+.form-floating>input,
+.form-floating>select {
     font-weight: 500;
     font-size: 1.0rem
 }
 
 
-.links a{
-    color:yellow;
+.links a {
+    color: yellow;
     text-decoration: none;
 }
 
-.links p{
-    font-size:1.3rem;
+.links p {
+    font-size: 1.3rem;
 }
 
-.last-date{
-    padding:2%;
+.last-date {
+    padding: 2%;
     text-align: center;
-    color:red;
+    color: red;
     margin: 1%;
 }
 
-.screenshot{
+.screenshot {
     color: red;
 }
 
-@media (max-width:768px){
-    .main-heading{
+@media (max-width:768px) {
+    .main-heading {
         font-size: 2rem;
     }
 
-    .heading-des-college{
+    .heading-des-college {
         font-size: 1.3rem;
         margin: 1em 0;
     }
 
-    .heading-des1{
+    .heading-des1 {
         font-size: 1.2rem;
         margin: 1em 0;
     }
 
-    .heading-des2{
+    .heading-des2 {
         font-size: 1.3rem;
     }
 
-    .heading-des3{
+    .heading-des3 {
         font-size: 1.3rem;
         margin: 1em 1em;
     }
 
-    .links a{
+    .links a {
         display: block;
         margin: 0em;
     }
 
-    .registration-fees{
+    .registration-fees {
         font-size: 1.2rem;
         text-align: center;
         margin: 0 1em;
         padding: 1em;
     }
 
-    .reg-ul{
+    .reg-ul {
         text-align: left;
     }
 }
 
 /* payment section */
 
-#payment-physical{
-    padding:3% 0 ;
+#payment-physical {
+    padding: 3% 0;
     text-align: center;
     display: none;
 }
 
-#payment-virtual{
-    padding:3% 0 ;
+#payment-virtual {
+    padding: 3% 0;
     text-align: center;
     display: none;
 }
 
-#payment-virtual-india{
-    padding:3% 0 ;
+#payment-virtual-india {
+    padding: 3% 0;
     text-align: center;
     display: none;
 }
 
-.thankyou{
-    padding:1% ;
+.thankyou {
+    padding: 1%;
     font-size: 1.5rem;
     color: #fff;
 }
 
-#payment-physical h2{
-    padding:1% 0 0;
+#payment-physical h2 {
+    padding: 1% 0 0;
 }
 
-.first-section{
-    background: #F7971E;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding:3% ;
+.first-section {
+    background: #F7971E;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFD200, #F7971E);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFD200, #F7971E);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 3%;
 }
 
-.payment-modes{
-    color:#73777B;
-    padding-bottom: 1%;;
+.payment-modes {
+    color: #73777B;
+    padding-bottom: 1%;
+    ;
 
 }
-.total-amount{
-    font-size: 2rem;;
-   color: maroon;
-   padding:1% 0;
+
+.total-amount {
+    font-size: 2rem;
+    ;
+    color: maroon;
+    padding: 1% 0;
 }
 
-.account-details{
+.account-details {
     font-size: 1.5rem;
-    color:blue;
-    padding:1% 0 0;
+    color: blue;
+    padding: 1% 0 0;
 }
 
-.img-qrcode{
-    width:20em;
-    height:20em;
+.img-qrcode {
+    width: 20em;
+    height: 20em;
 }
 
 @media (max-width:768px) {
-    .img-qrcode{
+    .img-qrcode {
         content: url('../img/qrcodemobile.jpg');
-        width:100%;
-        height:100%;
-    }    
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /* footer section*/
 
-.footer{
+.footer {
     text-align: center;
     padding: 1% 0;
 }
-.screenshot{
+
+.screenshot {
     color: red;
 }
