@@ -592,6 +592,31 @@ section {
   overflow: hidden;
 }
 
+
+/*
+  Note
+*/
+.note {
+  box-shadow: rgba(0, 0, 0, 0.152) 0px 4px 12px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.note h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.ol-list {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+/*
+Note End
+*/
 .section-header .section-title {
   font-size: 3rem;
   color: #111;
